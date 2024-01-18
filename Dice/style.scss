@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site-main {
+    background-color: rgb(48, 47, 47);
+}
+
+h1#tittle {
+    font-size: 100px;
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    text-shadow: black 2px 5px 10px;
+}
+
+.cube-1, .cube-2{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 16px;
+    margin: 50px;
+    position: relative;
+    padding: 30px;
+    box-shadow: rgb(72, 47, 47) 2px 5px 10px;
+    .dot {
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 30px;
+        position: absolute;
+        
+    }
+
+    //hodnota 1
+    .stage-1 {
+
+        .dot-4 {
+            left: 30%;
+            top: 30%;
+        }
+        .dot-1, .dot-2, .dot-3, .dot-5, .dot-6 {
+            display: none;
+        } 
+    }
+
+    //hodnota 2
+    .stage-2 {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+        .dot-2, .dot-4, .dot-5, .dot-6 {
+            display: none;
+        } 
+    }
+
+    //hodnota 3
+    .stage-3 {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+        .dot-4 {
+            left: 30%;
+            top: 30%;
+        }
+    }
+    
+    //hodnota 4
+    .stage-4 {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+            
+        .dot-2 {
+            top: 50%;
+        }
+        .dot-3 {
+            left: 50%;
+        }
+    }
+
+    //hodnota5
+    .stage-5 {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+    
+        .dot-2 {
+            top: 50%;
+        }
+    
+        .dot-3 {
+            left: 50%;
+        }
+    
+        .dot-4 {
+            left: 30%;
+            top: 30%;
+        }
+
+    }
+
+    //hodnota 6
+    .stage-6 {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+            
+        .dot-2 {
+            top: 50%;
+        }
+        .dot-3 {
+            left: 50%;
+        }
+
+        .dot-4 {
+            top: 31%;
+        }
+
+        .dot-5 {
+            top: 31%;
+            left: 50%;
+        }
+    }
+
+
+}
+
+.playing-area {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.player-1, .player-2 {
+    h2 {
+        color: white;
+        text-align: center;
+    }
+}
+
+footer
+.copy {
+    text-align: center;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
