@@ -29,4 +29,5 @@ else if (randomNumber2 > randomNumber1) {
 else if (randomNumber1 === randomNumber2) {
     var draw = "It's draw!"
     document.querySelector("#tittle").innerHTML = draw;
-}
+};
+
